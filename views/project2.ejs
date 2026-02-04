@@ -10,7 +10,7 @@
     <title>Project 2</title>
 </head>
 
-<body class="bg-light">
+<body style="background: linear-gradient(135deg, #1f2937, #2e3a59);">
 
     <%- include('partials/navbar') %>
 
@@ -23,8 +23,14 @@
                 <!-- Title -->
                 <h2 class="text-center fw-bold mb-4">🕹 VR Escape Room</h2>
 
+                <!-- Tech Stack -->
+<div class="text-center mb-4">
+    <span class="badge bg-unity me-2">Unity</span>
+    <span class="badge bg-js me-2">JavaScript</span>
+</div>
+
                 <!-- Intro -->
-                <p class="lead text-center text-muted mb-4">
+                <p class="lead text-center mb-4">
                     A fully developed VR Escape Room created from my own Game Design Document (GDD).
                 </p>
 
@@ -37,6 +43,7 @@
                 </div>
 
                 <!-- Description -->
+                 <h5 class="fw-semibold alert alert-overview mb-4">📌 Project Overview</h5>
                 <p>
                     This VR project features a minimalistic room with handcrafted wooden furniture and four interactive
                     puzzle spaces. Players explore a 3D environment, manipulate objects, and solve challenges to escape.
@@ -54,7 +61,7 @@
                 </p>
 
                 <!-- Features -->
-                <h5 class="mt-4 fw-semibold">✨ Key Features</h5>
+                <h5 class="mt-4 fw-semibold alert alert-features mb-4">✨ Key Features</h5>
 
                 <ul class="list-group list-group-flush mb-4">
                     <li class="list-group-item">Immersive VR exploration</li>
@@ -66,7 +73,7 @@
                 </ul>
 
                 <!-- Game Loop -->
-                <h5 class="fw-semibold">🎮 Game Loop / Puzzle Rooms</h5>
+                <h5 class="fw-semibold alert alert-game">🎮 Game Loop / Puzzle Rooms</h5>
 
                 <ul class="mb-4">
                     <li><strong>Library:</strong> Magical book riddles</li>
@@ -82,21 +89,19 @@
 
                 <!-- Back Button -->
 <div class="d-flex justify-content-between mt-4">
-    <a href="/#portfolio" class="btn btn-outline-primary">
-        ← Back to Portfolio
+    <a href="/project1" class="btn btn-back">
+        ← Previous project
     </a>
-    <a href="/project3" class="btn btn-outline-primary">
+    <a href="/project3" class="btn btn-back">
         Next project →
     </a>
 </div>
-
-
-            </div>
-
-        </div>
-
+    <div class="d-flex justify-content-center">
+      <a href="/portfolio">Back to other Portfolio projects</a>
     </div>
-<%- include('partials/footer') %>
+            </div>
+        </div>
+    </div>
 </body>
 
 

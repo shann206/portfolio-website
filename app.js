@@ -91,6 +91,10 @@ app.get('/portfolio/certificate', (req, res) => {
     res.render('certificate');
 });
 
+app.get('/portfolio', (req, res) => {
+    res.render('portfolio');
+});
+
 app.post('/contact', upload.single('image'), (req, res) => {
     const { name, email, contactNo, message } = req.body;
 

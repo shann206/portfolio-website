@@ -10,7 +10,7 @@
     <title>Project 1</title>
 </head>
 
-<body class="bg-light">
+<body style="background: linear-gradient(135deg, #1f2937, #2e3a59);">
 
     <%- include('partials/navbar') %>
 
@@ -23,8 +23,15 @@
                 <!-- Title -->
                 <h2 class="text-center fw-bold mb-4">🎵 Music Library</h2>
 
+                <!-- Tech Stack -->
+                <div class="text-center mb-4">
+                    <span class="badge bg-nodejs me-2">Node.js</span>
+                    <span class="badge bg-express me-2">Express</span>
+                    <span class="badge bg-bootstrap me-2">Bootstrap</span>
+                </div>
+
                 <!-- Description -->
-                <p class="lead text-center text-muted mb-4">
+                <p class="lead text-center mb-4">
                     A simple Music Library CRUD application built with Node.js, Express, and Bootstrap.
                 </p>
 
@@ -37,6 +44,7 @@
                 </div>
 
                 <!-- Main Content -->
+                 <h5 class="fw-semibold alert alert-overview mb-4">📌 Project Overview</h5>
                 <p>
                     This application allows users to add, view, edit, and delete music entries. Each entry includes
                     a title, singer, description, image, and YouTube link.
@@ -48,7 +56,7 @@
                 </p>
 
                 <!-- Features -->
-                <h5 class="mt-4 fw-semibold">✨ Key Features</h5>
+                <h5 class="mt-4 fw-semibold alert alert-features mb-4">✨ Key Features</h5>
 
                 <ul class="list-group list-group-flush mb-4">
                     <li class="list-group-item">HTTP Routing</li>
@@ -60,7 +68,7 @@
                 </ul>
 
                 <!-- Learning -->
-                <h5 class="fw-semibold">📚 What I Learned</h5>
+                <h5 class="fw-semibold alert alert-learned">📚 What I Learned</h5>
 
                 <ul class="mb-4">
                     <li>Setting up Node.js servers using Express</li>
@@ -78,13 +86,16 @@
 
                 <!-- Back Button -->
 <div class="d-flex justify-content-between mt-4">
-    <a href="/#portfolio" class="btn btn-outline-primary">
-        ← Back to Portfolio
+    <a href="/portfolio/development" class="btn btn-back">
+        ← Back to Development Portfolio
     </a>
-    <a href="/project2" class="btn btn-outline-primary">
+    <a href="/project2" class="btn btn-back">
         Next project →
     </a>
 </div>
+    <div class="d-flex justify-content-center">
+      <a href="/portfolio">Back to other Portfolio projects</a>
+    </div>
 
 
             </div>
@@ -92,7 +103,6 @@
         </div>
 
     </div>
-
 </body>
 
 

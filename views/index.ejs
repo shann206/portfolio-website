@@ -23,6 +23,7 @@
       <!-- Text -->
       <div class="col-md-6 text-center text-md-start">
 
+        <h3>Welcome to my portfolio!</h3>
         <h1 class="hero-title">
           Hi, I'm <span>Tan Zhi Shan</span>
         </h1>
@@ -38,7 +39,7 @@
 
         <div class="hero-buttons mt-4">
 
-          <a href="/#portfolio" class="btn hero-btn-primary">
+          <a href="/portfolio" class="btn hero-btn-primary">
             View Projects
           </a>
 
@@ -142,10 +143,18 @@
           <input type="email" class="form-control" id="email" name="email" required>
         </div>
 
-        <div class="mb-3">
-          <label for="contactNo" class="form-label">Contact No:</label>
-          <input type="number" class="form-control" id="contactNo" name="contactNo" required>
-        </div>
+<div class="mb-3">
+  <label for="contactNo" class="form-label">Contact No:</label>
+  <input 
+    type="tel" 
+    class="form-control" 
+    id="contactNo" 
+    name="contactNo" 
+    pattern="[0-9+]{8,15}" 
+    required
+    oninput="this.value = this.value.replace(/[^0-9+]/g,'')"
+  >
+</div>
 
         <div class="mb-3">
           <label for="message" class="form-label">Short Message:</label>

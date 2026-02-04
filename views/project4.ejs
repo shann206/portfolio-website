@@ -10,7 +10,7 @@
     <title>Project 4</title>
 </head>
 
-<body class="bg-light min-vh-100">
+<body style="background: linear-gradient(135deg, #1f2937, #2e3a59);">
 
 <%- include('partials/navbar') %>
 
@@ -23,8 +23,17 @@
             <!-- Title -->
             <h2 class="text-center fw-bold mb-3">🍕 Pizza App</h2>
 
+            <!-- Tech Stack -->
+<div class="text-center mb-4">
+    <span class="badge bg-react me-2">React</span>
+    <span class="badge bg-js me-2">JavaScript</span>
+    <span class="badge bg-bootstrap me-2">Bootstrap</span>
+    <span class="badge bg-css me-2">CSS</span>
+    <span class="badge bg-html me-2">HTML</span>
+</div>
+
             <!-- Subtitle -->
-            <p class="lead text-center text-muted mb-4">
+            <p class="lead text-center mb-4">
                 A React-based pizza ordering interface demonstrating component architecture,
                 state management, and dynamic UI rendering.
             </p>
@@ -38,7 +47,7 @@
             </div>
 
             <!-- Overview -->
-            <h5 class="fw-semibold">📌 Project Overview</h5>
+                 <h5 class="fw-semibold alert alert-overview mb-4">📌 Project Overview</h5>
 
             <p>
                 This project is a fully interactive Pizza Ordering Web App built with React.
@@ -54,7 +63,7 @@
             </p>
 
             <!-- Features -->
-            <h5 class="mt-4 fw-semibold">✨ Key Features</h5>
+                <h5 class="mt-4 fw-semibold alert alert-features mb-4">✨ Key Features</h5>
 
             <ul class="list-group list-group-flush mb-4">
                 <li class="list-group-item">
@@ -81,7 +90,7 @@
             </ul>
 
             <!-- Learning -->
-            <h5 class="fw-semibold">📚 What I Learned</h5>
+                <h5 class="fw-semibold alert alert-learned">📚 What I Learned</h5>
 
             <ul class="mb-4">
                 <li>Managing local and shared state using React hooks</li>
@@ -99,14 +108,16 @@
 
             <!-- Back Button -->
 <div class="d-flex justify-content-between mt-4">
-    <a href="/#portfolio" class="btn btn-outline-primary">
-        ← Back to Portfolio
+    <a href="/project3" class="btn btn-outline-primary">
+        ← Previous project
     </a>
-    <a href="/project5" class="btn btn-outline-primary">
-        Next project →
+    <a href="/portfolio/development" class="btn btn-outline-primary">
+        Back to Development Portfolio →
     </a>
 </div>
-
+    <div class="d-flex justify-content-center">
+      <a href="/portfolio">Back to other Portfolio projects</a>
+    </div>
         </div>
 
     </div>
