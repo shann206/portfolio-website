@@ -457,3 +457,7 @@ form {
 .btn {
     width: auto !important; /* allow buttons to shrink to text size */
 }
+
+body {
+  padding-top: 70px; /* height of your fixed navbar */
+}
