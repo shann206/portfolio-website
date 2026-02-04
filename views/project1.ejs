@@ -5,49 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Project 1</title>
 </head>
 
-<body>
+<body class="bg-light">
+
     <%- include('partials/navbar') %>
 
-        <section class="container mt-4 pt-5" style="padding-top: 80px;">
-            <h2 class="text-center">Music Library</h2>
-            <p class="text-center">This project is a simple Music Library CRUD application built with Node.js, Express, and Bootstrap. It
-                allows users to add, view, edit, and delete music entries, each containing a title, singer, description,
-                image, and YouTube link.</p>
-                <br>
-            <img src="/images/musicApp.png" alt="My Photo" class="img-fluid d-block mx-auto my-3">
+    <div class="container py-5">
 
-            <p>The app features full CRUD functionality, form handling, dynamic HTML generation, and a reusable
-                Bootstrap navigation bar. Music data is stored in an in-memory array, and each entry includes a title,
-                singer, description, image, and YouTube link. This project strengthened my understanding of server-side
-                routing, form processing, and building simple web applications using Express.</p>
-            <p>The Music Library app demonstrates the fundamentals of server-side development using Express.</p>
-            <p>It includes:</p>
-            <ul>
-                <li>HTTP routing</li>
-                <li>Dynamic HTML rendering</li>
-                <li>Form handling</li>
-                <li>Updating in-memory data</li>
-                <li>Bootstrap</li>
-                <li>RESTful style routes</li>
-            </ul>
-            <p>This app does not use a database. Instead, it stores data in a simple in-memory array for learning
-                purposes.</p>
+        <div class="card shadow-lg border-0 rounded-4">
 
-            <p>What I Learned:</p>
-            <ul>
-                <li>Setting up a Node.js server using Express</li>
-                <li>Creating dynamic HTML pages without templates</li>
-                <li>Handling GET and POST requests</li>
-                <li>Structuring CRUD operations</li>
-                <li>Managing form inputs from the browser</li>
-                <li>Understanding route parameters like :id</li>
-                <li>Using Bootstrap to design fast, clean layouts</li>
-            </ul>
-        </section>
+            <div class="card-body p-4 p-md-5">
+
+                <!-- Title -->
+                <h2 class="text-center fw-bold mb-4">🎵 Music Library</h2>
+
+                <!-- Description -->
+                <p class="lead text-center text-muted mb-4">
+                    A simple Music Library CRUD application built with Node.js, Express, and Bootstrap.
+                </p>
+
+                <!-- Image -->
+                <div class="text-center mb-4">
+                    <img src="/images/musicApp.png"
+                         alt="Music App"
+                         class="img-fluid rounded-3 shadow-sm"
+                         style="max-width: 700px;">
+                </div>
+
+                <!-- Main Content -->
+                <p>
+                    This application allows users to add, view, edit, and delete music entries. Each entry includes
+                    a title, singer, description, image, and YouTube link.
+                </p>
+
+                <p>
+                    It features full CRUD functionality, form handling, dynamic HTML generation, and a reusable
+                    Bootstrap navigation bar. Data is stored in an in-memory array for learning purposes.
+                </p>
+
+                <!-- Features -->
+                <h5 class="mt-4 fw-semibold">✨ Key Features</h5>
+
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item">HTTP Routing</li>
+                    <li class="list-group-item">Dynamic HTML Rendering</li>
+                    <li class="list-group-item">Form Handling</li>
+                    <li class="list-group-item">In-Memory Data Storage</li>
+                    <li class="list-group-item">Bootstrap UI Design</li>
+                    <li class="list-group-item">RESTful Routes</li>
+                </ul>
+
+                <!-- Learning -->
+                <h5 class="fw-semibold">📚 What I Learned</h5>
+
+                <ul class="mb-4">
+                    <li>Setting up Node.js servers using Express</li>
+                    <li>Handling GET and POST requests</li>
+                    <li>Structuring CRUD operations</li>
+                    <li>Managing form inputs</li>
+                    <li>Using route parameters (:id)</li>
+                    <li>Designing responsive layouts with Bootstrap</li>
+                </ul>
+
+                <!-- Note -->
+                <div class="alert alert-info">
+                    ℹ️ This project uses an in-memory array instead of a database for learning purposes.
+                </div>
+
+                <!-- Back Button -->
+<div class="d-flex justify-content-between mt-4">
+    <a href="/#portfolio" class="btn btn-outline-primary">
+        ← Back to Portfolio
+    </a>
+    <a href="/project2" class="btn btn-outline-primary">
+        Next project →
+    </a>
+</div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
+
 
 </html>

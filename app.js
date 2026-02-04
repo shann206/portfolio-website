@@ -55,6 +55,42 @@ app.get('/project4', (req, res) => {
     res.render('project4');
 });
 
+app.get('/project5', (req, res) => {
+    res.render('project5');
+});
+
+app.get('/project6', (req, res) => {
+    res.render('project6');
+});
+
+app.get('/project7', (req, res) => {
+    res.render('project7');
+});
+
+app.get('/project8', (req, res) => {
+    res.render('project8');
+});
+
+app.get('/project9', (req, res) => {
+    res.render('project9');
+});
+
+app.get('/project10', (req, res) => {
+    res.render('project10');
+});
+
+app.get('/portfolio/development', (req, res) => {
+    res.render('development');
+});
+
+app.get('/portfolio/uiux', (req, res) => {
+    res.render('uiux');
+});
+
+app.get('/portfolio/certificate', (req, res) => {
+    res.render('certificate');
+});
+
 app.post('/contact', upload.single('image'), (req, res) => {
     const { name, email, contactNo, message } = req.body;
 
