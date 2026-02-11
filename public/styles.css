@@ -664,3 +664,244 @@ form {
   color: #e5e7eb;  /* keep text light when focused */
   box-shadow: none;
 }
+
+/* Toggle Container */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Switch */
+.switch {
+  position: relative;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  background-color: #ccc;
+  border-radius: 25px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 3px;
+  bottom: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* Checked */
+input:checked + .slider {
+  background: #4f46e5;
+}
+
+input:checked + .slider::before {
+  transform: translateX(25px);
+}
+
+/* ==============================
+   THEME COLORS
+============================== */
+
+/* Default = Light */
+body {
+  background: #f9fafb;
+  color: #111827;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* Sections */
+.main-section {
+  background: #f9fafb;
+}
+
+body.dark .main-section {
+  background: #020617;
+}
+
+/* Navbar */
+body.dark .custom-navbar {
+  background: linear-gradient(90deg, #020617, #111827);
+}
+
+body:not(.dark) .custom-navbar {
+  background: linear-gradient(90deg, #ffffff, #f1f5f9);
+}
+
+/* Cards */
+body:not(.dark) .card {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+body.dark .card {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* =====================================
+   LIGHT MODE OVERRIDES
+===================================== */
+
+/* Hero Section */
+body:not(.dark) .hero-section {
+  background: linear-gradient(135deg, #f9fafb, #e5edff);
+  color: #111827;
+}
+
+/* Hero Text */
+body:not(.dark) .hero-title,
+body:not(.dark) .hero-desc,
+body:not(.dark) .hero-subtitle,
+body:not(.dark) .hero-section h3 {
+  color: #111827;
+}
+
+/* About / Contact / Main Sections */
+body:not(.dark) .main-section,
+body:not(.dark) #contact,
+body:not(.dark) #about {
+  background: #ffffff;
+  color: #111827;
+}
+
+/* Contact Form */
+body:not(.dark) form {
+  background: #f1f5f9;
+}
+
+body:not(.dark) .form-control {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #cbd5e1;
+}
+
+body:not(.dark) .form-control::placeholder {
+  color: #64748b;
+}
+
+/* Portfolio Section */
+body:not(.dark) #portfolio,
+body:not(.dark) #portfolio-categories {
+  background: #f9fafb;
+}
+
+/* Cards */
+body:not(.dark) .card {
+  background: #ffffff;
+  color: #111827;
+}
+
+/* Paragraphs */
+body:not(.dark) p {
+  color: #334155;
+}
+
+/* Footer */
+body:not(.dark) .footer {
+  background: #f1f5f9;
+  color: #111827;
+}
+
+/* Navbar */
+body:not(.dark) .custom-navbar {
+  background: linear-gradient(90deg, #ffffff, #f1f5f9);
+}
+
+body:not(.dark) .custom-navbar .nav-link {
+  color: #111827;
+}
+
+/* Contact Button */
+body:not(.dark) .contact-btn {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+/* ==============================
+   PROJECT PAGE THEME
+============================== */
+
+/* Dark Mode (default) */
+body.dark .project-page {
+  background: linear-gradient(135deg, #1f2937, #2e3a59);
+  color: #e5e7eb;
+}
+
+/* Light Mode */
+body:not(.dark) .project-page {
+  background: #f9fafb;
+  color: #111827;
+}
+
+/* Card background */
+body:not(.dark) .project-page .card {
+  background: #ffffff;
+  color: #111827;
+}
+
+/* Alerts (Overview/Features/Learned) */
+body:not(.dark) .project-page .alert {
+  background-color: #f1f5f9;
+  color: #111827;
+  border-color: #2563eb;
+}
+
+/* List group items (key features) */
+body:not(.dark) .project-page .list-group-item {
+  background-color: #ffffff;
+  color: #111827;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.footer {
+  background: #f9fafb; /* Light mode background */
+  color: #111827;       /* Light mode text */
+  transition: 0.3s;
+}
+
+body.dark .footer {
+  background: #121212;  /* Dark mode background */
+  color: #f9fafb;       /* Dark mode text */
+}
+
+/* Links in footer */
+.footer a {
+  color: inherit;        /* Use the same color as text */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #3b82f6;
+}
+
+/* Fix brand text color in light mode */
+body:not(.dark) .custom-navbar .navbar-brand {
+  color: #111827 !important; /* dark text */
+}
+
